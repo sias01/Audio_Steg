@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MESSENGER</title>
+    <link rel="icon" href="data:,">
+</head>
+
+<style>
+h1 {
+    text-align: center;
+    color: #04AA6D;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body {
+    /*background: url(bg.jpg);*/
+    /*background-image: url("C:Users//Shreyas Desai//Desktop//hack//static//images//bg.jpg");*/
+    background-color: #04AA6D;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url("bg.jpg");    
+}
+
+
+.content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+form {
+    
+    width: 30%;
+    align-items: center;
+    padding-left: 40%;
+    padding-top: 20%;
+}
+
+
+/* Full-width inputs*/ 
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px black;
+    box-sizing: border-box;
+    background-color: green;
+}
+
+.btn{
+    color: black;
+    transition-duration: 0.1s;
+    background-color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+} 
+</style>
+
+<body>
+
+    <div class="content">
+        <h1>MESSENGER</h1>
+    </div>
+
+    <form>
+        
+      
+        <div class="container">
+          <label for="uname" style="color: white;"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required style="background-color: black; color: aliceblue;">
+      
+          <label for="psw" style="color: white;"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required style="background-color: black; color: aliceblue;">
+          <a href="{{url_for('next')}}">submit</a>
+        </div>
+     
+      </form>
+    
+</body>
+
+</html>
